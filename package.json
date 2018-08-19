@@ -1,0 +1,32 @@
+{
+  "name": "ft_tech_test",
+  "version": "1.0.0",
+  "description": "technical test for the financial times",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "cypress-test": "./node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderscodes/FT-tech-test.git"
+  },
+  "author": "anderscodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anderscodes/FT-tech-test/issues"
+  },
+  "homepage": "https://github.com/anderscodes/FT-tech-test#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.2.0",
+    "nightwatch": "^0.9.21"
+  }
+}

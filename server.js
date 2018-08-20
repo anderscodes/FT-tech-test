@@ -16,8 +16,8 @@ app.get('/search', (req, res) => {
   apiQuery.sendRequest();
 });
 
-let renderView = (res, data) => {
-  res.render('pages/search', { result: data });
+let renderView = (res, data, searchQuery) => {
+  res.render('pages/search', { result: data, searchQuery: searchQuery } );
 };
 
 app.listen(3000);

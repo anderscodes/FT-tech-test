@@ -47,7 +47,7 @@ class Api {
       if (error) throw new Error(error);
       const result = body.results[0].results;
       const loop = this._resultLoop(result);
-      this.renderView(this.response, loop);
+      this.renderView(this.response, loop, this.searchQuery);
     });
   }
 }

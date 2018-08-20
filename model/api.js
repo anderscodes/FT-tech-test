@@ -14,6 +14,18 @@ class Api{
     this.url = "http://api.ft.com/content/search/v1"
   }
 
+  _resultLoop(result) {
+    const resultsArray = [];
+    for (let i = 0; i < result.length; i++) {
+      var array = [
+        result[i].title.title,
+        result[i].location.uri
+      ]
+      resultsArray.push(array);
+    }
+    return resultsArray;
+  }
+
   _options(){
     return {
       method: 'POST',
@@ -31,7 +43,9 @@ class Api{
   sendRequest() {
     request( this._options(), (error, response, body) => {
        if (error) throw new Error(error);
-       console.log(body)
+       const result = body.results[0].results;
+       const loop = await this._resultLoop(result);
+       console.log(loop)
      });
    }
   }

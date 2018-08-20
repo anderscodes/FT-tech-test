@@ -11,11 +11,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/search', (req, res) => {
-let searchQuery = req.query.searchquery;
-let apiQuery = new Api(searchQuery);
-apiQuery.sendRequest();
+  const searchQuery = req.query.searchquery;
+  const apiQuery = new Api(res, renderView, searchQuery);
+  apiQuery.sendRequest();
 });
 
+let renderView = (res, data) => {
+  res.render('pages/search', { result: data });
+};
 
 app.listen(3000);
 

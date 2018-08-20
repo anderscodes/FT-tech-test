@@ -4,6 +4,11 @@ The instructions were to create a web page that used the Financial Times API to 
 
 I have built my project using node and JavaScript with express as a web framework, EJS for templating, request to handle the API request and Eslint as a linter with the airbnb config for the style guide.  
 
+**Screenshots**
+
+![Index Page](https://github.com/anderscodes/FT-tech-test/blob/master/index.png?raw=true)
+![Search Page](https://github.com/anderscodes/FT-tech-test/blob/master/search.png?raw=true)
+
 **Process**
 
 I was on holiday when I recieved the tech test which left me with very limited time to complete it. I had planned to spike and create a working version without testing to make sure I understood how the app would work and then TDD a 'real' version of the test. Unfortunatley the spike took me a lot longer then I had anticipated and due to travel complications I was unable to TDD a version of the tech test so I have decided just to present the spike.
@@ -27,4 +32,4 @@ The API request simply sends a request with the search query to the FT API and p
 
 I had planned to use Jasmine to unit test the model and my strategy would have been as follows: I would have tested that the individual functions has been called(options and resultLoop) when sendRequest was called. I would also have tested that the request had been called and that the correct data had been sent.
 
-I had also planned to use cypress to feature test my application and I would have tested that the header and footer displayed properly on each page, that the search query returned a number of headlines and that the search query was displayed on the result page. 
+I had also planned to use cypress to feature test my application and I would have tested that the header and footer displayed properly on each page, that the search query returned a number of headlines and that the search query was displayed on the result page.

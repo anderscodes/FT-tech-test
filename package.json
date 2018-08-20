@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anderscodes/FT-tech-test#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "request": "^2.88.0"
@@ -25,8 +26,6 @@
   "devDependencies": {
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "jasmine": "^3.2.0",
-    "nightwatch": "^0.9.21"
+    "eslint-plugin-import": "^2.14.0"
   }
 }
